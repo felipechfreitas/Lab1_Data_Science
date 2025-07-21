@@ -1,0 +1,120 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"type\":2,\"version\":\"5.53\"},\"customTheme\":{\"name\":\"Innovate\",\"type\":2,\"version\":\"5.53\"}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          },
+          {
+            "name": "Innovate",
+            "path": "BuiltInThemes/Innovate.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"09be3715a2744e649e6c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":45.67164179104478,\"z\":7000,\"width\":166.56716417910448,\"height\":154.92537313432837,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dataset.Data_Pedido.Variation.Hierarquia de datas.Ano\",\"active\":true},{\"queryRef\":\"dataset.Data_Pedido.Variation.Hierarquia de datas.Mês\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Data_Pedido\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Ano\"},\"Name\":\"dataset.Data_Pedido.Variation.Hierarquia de datas.Ano\",\"NativeReferenceName\":\"Data_Pedido Ano\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Data_Pedido\"}},\"Hierarchy\":\"Hierarquia de datas\"}},\"Level\":\"Mês\"},\"Name\":\"dataset.Data_Pedido.Variation.Hierarquia de datas.Mês\",\"NativeReferenceName\":\"Data_Pedido Mês\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"dataset.Data_Pedido.Variation.Hierarquia de datas.Ano\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_0f026f94-1f0b-4e20-8987-6fe3680f7ee3\"}},\"Property\":\"Ano\"}}],\"isPinned\":true},{\"queryRefs\":[\"dataset.Data_Pedido.Variation.Hierarquia de datas.Mês\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"numericEnd\":{\"expr\":{\"Literal\":{\"Value\":\"2011D\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 154.93,
+          "width": 166.57,
+          "x": 0.00,
+          "y": 45.67,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"1228d51b77856cb6b8e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":166.56716417910448,\"y\":53.731343283582085,\"z\":3000,\"width\":375.2238805970149,\"height\":249.8507462686567,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dataset.SubCategoria\",\"active\":true}],\"Y\":[{\"queryRef\":\"Avg(dataset.Desconto)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"SubCategoria\"},\"Name\":\"dataset.SubCategoria\",\"NativeReferenceName\":\"SubCategoria\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Desconto\"}},\"Function\":1},\"Name\":\"Avg(dataset.Desconto)\",\"NativeReferenceName\":\"Média de Desconto\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Desconto\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.85,
+          "width": 375.22,
+          "x": 166.57,
+          "y": 53.73,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"2faf4cfbadf4fa1c5604\",\"layouts\":[{\"id\":0,\"position\":{\"x\":988.6699507389162,\"y\":54.08866995073892,\"z\":0,\"width\":271.33004926108373,\"height\":249.16256157635468,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(dataset.Total_Vendas)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total_Vendas\"}},\"Function\":0},\"Name\":\"Sum(dataset.Total_Vendas)\",\"NativeReferenceName\":\"Soma de Total_Vendas\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total_Vendas\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Vendas Global'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.16,
+          "width": 271.33,
+          "x": 988.67,
+          "y": 54.09,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"367d2bf1db3149d25623\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":217.61194029850745,\"z\":6000,\"width\":166.56716417910448,\"height\":142.38805970149252,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dataset.Segmento\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Segmento\"},\"Name\":\"dataset.Segmento\",\"NativeReferenceName\":\"Segmento\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 142.39,
+          "width": 166.57,
+          "x": 0.00,
+          "y": 217.61,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"54100b9c2b33222f8e83\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":8000,\"width\":1279.7014925373135,\"height\":45.67164179104478,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Laboratório Prático 1 - DSA - Dashboard Analítico de Vendas Globais - 29/04/2024\",\"textStyle\":{\"fontFamily\":\"Arial Black\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 45.67,
+          "width": 1279.70,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"78cccb9b84e9f554946b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":384.17910447761193,\"z\":5000,\"width\":166.56716417910448,\"height\":314.3283582089552,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dataset.Pais\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pais\"},\"Name\":\"dataset.Pais\",\"NativeReferenceName\":\"Pais\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 314.33,
+          "width": 166.57,
+          "x": 0.00,
+          "y": 384.18,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"9fb4451f039b7461a898\",\"layouts\":[{\"id\":0,\"position\":{\"x\":166.56716417910448,\"y\":325.97014925373134,\"z\":4000,\"width\":531.9402985074627,\"height\":364.4776119402985,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"dataset.Pais\",\"active\":true}],\"Size\":[{\"queryRef\":\"Avg(dataset.Total_Vendas)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pais\"},\"Name\":\"dataset.Pais\",\"NativeReferenceName\":\"Pais\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total_Vendas\"}},\"Function\":1},\"Name\":\"Avg(dataset.Total_Vendas)\",\"NativeReferenceName\":\"Média de Total_Vendas\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Média de Vendas por País'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"dataset\"}},\"Property\":\"Total_Vendas\"}},\"Function\":1}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Total_Vendas\"}},\"Function\":1}},\"Right\":{\"Literal\":{\"Value\":\"200L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 364.48,
+          "width": 531.94,
+          "x": 166.57,
+          "y": 325.97,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a92d205f2a7a9f338a09\",\"layouts\":[{\"id\":0,\"position\":{\"x\":698.5074626865671,\"y\":325.97014925373134,\"z\":2000,\"width\":581.1940298507462,\"height\":364.4776119402985,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dataset.Pais\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dataset.ID_Pedido)\"}],\"Series\":[{\"queryRef\":\"dataset.Prioridade\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pais\"},\"Name\":\"dataset.Pais\",\"NativeReferenceName\":\"Pais\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID_Pedido\"}},\"Function\":5},\"Name\":\"CountNonNull(dataset.ID_Pedido)\",\"NativeReferenceName\":\"Contagem de ID_Pedido\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Prioridade\"},\"Name\":\"dataset.Prioridade\",\"NativeReferenceName\":\"Prioridade\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID_Pedido\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"titleFontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Vendas por País e Prioridade'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 364.48,
+          "width": 581.19,
+          "x": 698.51,
+          "y": 325.97,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"b2144987ab96cb4b6b7a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":566.865671641791,\"y\":53.731343283582085,\"z\":1000,\"width\":369.8507462686567,\"height\":249.8507462686567,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dataset.Categoria\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dataset.ID_Pedido)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Categoria\"},\"Name\":\"dataset.Categoria\",\"NativeReferenceName\":\"Categoria\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID_Pedido\"}},\"Function\":5},\"Name\":\"CountNonNull(dataset.ID_Pedido)\",\"NativeReferenceName\":\"Contagem de ID_Pedido\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ID_Pedido\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total de Vendas por Categoria'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 249.85,
+          "width": 369.85,
+          "x": 566.87,
+          "y": 53.73,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Innovate"
+}
